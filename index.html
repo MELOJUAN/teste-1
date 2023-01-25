@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urna Eletrônica</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body onload="comecar()">
+    
+        <header>
+            <br><h1 class="cabecalho">Urna Eletrônica: presidencial </h1>
+        </header>
+        <section>
+
+        
+        <div class="maquina">
+
+            <!-- Tela de Exibição -->
+            <div class="tela">
+                <div class="telainicial sumir">
+                    <p class="text-presidente">Presidente do Brasil </p>
+                    <input type="text" name="digito" value="" class="digito1" maxlength="1" readonly>
+                    <input type="text" name="digito" value="" class="digito2" maxlength="1" readonly>
+                </div>
+
+                <!-- Voto em Branco -->
+                <div class="cliquebranco sumir">
+                    <center><h1>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp VOTO EM BRANCO</h1></center><br>
+                    <br><br><br>
+                    <hr>
+                    Aperte a tecla
+                    <br>
+                    <strong>VERDE</strong> &nbsp&nbsp&nbsp&nbsp&nbsp   para CONFIRMAR este voto
+                    <br>
+                    <strong>LARANJA</strong> &nbsp para REINICIAR este voto
+                </div>
+
+                <!-- Voto Inválido -->
+                <div class="invalido sumir">
+                    <center>
+                        <p class="digito-invalido">Você digitou:</p>
+                        <br><br>
+                        <h1>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp NÚMERO INVÁLIDO</h1></center><br>
+                    <br><br><br>
+                    <hr>
+                    Aperte a tecla
+                    <br>
+                    <strong>VERDE</strong> &nbsp&nbsp&nbsp&nbsp&nbsp   para CONFIRMAR este voto
+                    <br>
+                    <strong>LARANJA</strong> &nbsp para REINICIAR este voto
+                </div>
+
+                <!-- Voto em Bolsonaro -->
+                <div class="kayle sumir">
+                    <span>SEU VOTO PARA</span>
+                    <P><strong>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp PRESIDENTE</strong></P><br>
+                    <input type="text" name="digitado" value="2" class="digitado1" maxlength="1" readonly>
+                    <input type="text" name="digitado" value="2" class="digitado2" maxlength="1" readonly>
+                    <br>
+                    <p><strong>Nome</strong>: Bolsonaro </p>
+                    <P><strong>Partido</strong>: PM (Partido do MITO)</P>
+                    <p><strong>Slogan</strong>: <i>"Bandido bom é bandido m0rt0!"</i></p>
+                    <p><strong>Vice-presidente</strong>: Braga netto </p>
+                    <hr>
+                    Aperte a tecla
+                    <br>
+                    <strong>VERDE</strong> &nbsp&nbsp&nbsp&nbsp&nbsp   para CONFIRMAR este voto
+                    <br>
+                    <strong>LARANJA</strong> &nbsp para REINICIAR este voto
+                    <img class="fotokayle" src="images/015564190337.jpg" alt="">
+                
+
+                </div>
+
+                <!-- Voto em Lula -->
+                <div class="qiyana sumir">
+                    <span>SEU VOTO PARA</span>
+                    <P><strong>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp PRESIDENTE</strong></P><br>
+                    <input type="text" name="digitado" value="1" class="digitado1" maxlength="1" readonly>
+                    <input type="text" name="digitado" value="3" class="digitado2" maxlength="1" readonly>
+                    <br>
+                    <p><strong>Nome</strong>: Lula </p>
+                    <P><strong>Partido</strong>: PT</P>
+                    <p><strong>Slogan</strong>: <i>" Faz o "L".</i></p>
+                    <p><strong>Vice-presidente</strong>: Geraldo alckmin</p>
+                    <hr>
+                    Aperte a tecla
+                    <br>
+                    <strong>VERDE</strong> &nbsp&nbsp&nbsp&nbsp&nbsp   para CONFIRMAR este voto
+                    <br>
+                    <strong>LARANJA</strong> &nbsp para REINICIAR este voto
+                    <img class="fotoqiyana" src="images/foto_1534363925445.jpg" alt="">
+                    
+                </div>
+
+                <!-- Voto em Dilma -->
+                <div class="irelia sumir">
+                    <span>SEU VOTO PARA</span>
+                    <P><strong>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp PRESIDENTE</strong></P><br>
+                    <input type="text" name="digitado" value="1" class="digitado1" maxlength="1" readonly>
+                    <input type="text" name="digitado" value="1" class="digitado2" maxlength="1" readonly>
+                    <br>
+                    <p><strong>Nome</strong>: Dilma </p>
+                    <P><strong>Partido</strong>: PT </P>
+                    <p><strong>Slogan</strong>: <i>"temos que estocar vento"</i></p>
+                    <p><strong>Vice-presidente</strong>: Temer </p>
+                    <hr>
+                    Aperte a tecla
+                    <br>
+                    <strong>VERDE</strong> &nbsp&nbsp&nbsp&nbsp&nbsp   para CONFIRMAR este voto
+                    <br>
+                    <strong>LARANJA</strong> &nbsp para REINICIAR este voto
+                    <img class="fotoirelia" src="images/foto_1534367628643.jpg" alt="">
+                    
+                </div>
+
+                <!-- Voto em ciro gomes -->
+                <div class="sylas sumir">
+                    <span>SEU VOTO PARA</span>
+                    <P><strong>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp PRESIDENTE</strong></P><br>
+                    <input type="text" name="digitado" value="1" class="digitado1" maxlength="1" readonly>
+                    <input type="text" name="digitado" value="2" class="digitado2" maxlength="1" readonly>
+                    <br>
+                    <p><strong>Nome</strong>: Ciro Gomes</p>
+                    <P><strong>Partido</strong>: PDT</P>
+                    <p><strong>Slogan</strong>: <i>"Sempre um passo a frente da lei!"</i></p>
+                    <p><strong>Vice-presidente</strong>: Ana paula</p>
+                    <hr>
+                    Aperte a tecla
+                    <br>
+                    <strong>VERDE</strong> &nbsp&nbsp&nbsp&nbsp&nbsp   para CONFIRMAR este voto
+                    <br>
+                    <strong>LARANJA</strong> &nbsp para REINICIAR este voto
+                    <img class="fotosylas" src="images/foto_1533929864216.jpg" alt="">
+                  
+
+                </div>
+
+                <img class="jax sumir" src="images/jax.png" alt="">
+
+                <!-- CLique em Confirma -->
+                <div class="cliqueconfirma sumir">
+                    <h1 style="margin-top: -300px;"><font style="font-size: 150px;">FIM</font></h1>
+                </div>
+            </div>
+            
+
+            <!-- Conteúdo Acima do Painel de Botões -->
+            <div class="logo">
+                <img class="logoruneterra" src="images/Story Brasil Rumo ao Hexa Moderno Verde e Amarelo (100 × 100 px).png" alt="Runeterra">
+                <h4 class="logomsg">Justiça Eleitoral <br> de Runeterra</h4>
+            </div>
+
+            <!-- Painel de Botões -->
+            <div class="painel">
+                <input class="numero" type="button" value="1" id="um" onclick='digitar("1")'>
+                <input class="numero" type="button" value="2" id="dois" onclick='digitar("2")'>
+                <input class="numero" type="button" value="3" id="tres" onclick='digitar("3")'> 
+                <br>
+                <input class="numero" type="button" value="4" id="quatro" onclick='digitar("4")'>
+                <input class="numero" type="button" value="5" id="cinco" onclick='digitar("5")'>
+                <input class="numero" type="button" value="6" id="seis" onclick='digitar("6")'>
+                <br>
+                <input class="numero" type="button" value="7" id="sete" onclick='digitar("7")'>
+                <input class="numero" type="button" value="8" id="oito" onclick='digitar("8")'>
+                <input class="numero" type="button" value="9" id="nove" onclick='digitar("9")'>
+                <br>
+                <input class="numero" type="button" value="0" id="zero" onclick='digitar("0")'>
+                <br>
+                <input class="acao" type="button" value="BRANCO" id="branco" onclick="branco()">
+                <input class="acao" type="button" value="CORRIGE" id="corrige" onclick="corrige()">
+                <input class="acao" type="button" value="CONFIRMA" id="confirma" onclick="confirma()">
+            </div>
+            <img class="yuumi" src="" alt="">
+            <footer><p class="rodape">&copy;MárcioDiniz</p><br></footer>
+        </div>
+
+        <audio class="jaxVotou" src=""></audio>
+
+    
+    </section>
+    
+    
+    
+    
+    <div class="telabranca"></div>
+</body>
+</html>
